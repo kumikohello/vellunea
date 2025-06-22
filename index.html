@@ -125,15 +125,19 @@
     }
 
     .social-icons a {
-      color: #f4f4f4;
       margin: 0 15px;
       font-size: 2rem;
       text-decoration: none;
     }
 
+    .social-icons a[aria-label="Instagram"] {
+      color: #E1306C; /* Instagram brand color */
+    }
+
     .social-icons .disabled {
       opacity: 0.4;
       pointer-events: none;
+      color: #f4f4f4;
     }
 
     @media (max-width: 480px) {
