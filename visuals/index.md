@@ -16,3 +16,5 @@ title: Visuals
       <img src="images/window.jpg" alt="moonlight window" loading="lazy" />
       <img src="images/water.jpg" alt="light on water" loading="lazy" />
   </div>
+
+<p><a href="/" class="back-home">&larr; Back to home</a></p>
