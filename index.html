@@ -5,27 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>VELLUNEA</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
       margin: 0;
-      background-color: #0e0e0e;
+      background: linear-gradient(to bottom, #1a1a2e, #0e0e0e);
       color: #f4f4f4;
       font-family: 'Montserrat', sans-serif;
     }
-    header {
-      padding: 80px 20px 20px;
+    .hero {
+      background: url('images/moon-hero.jpg') no-repeat center center;
+      background-size: cover;
+      padding: 160px 20px 60px;
       text-align: center;
+      color: #f4f4f4;
+      text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     }
     h1 {
       font-family: 'Playfair Display', serif;
-      font-size: 3rem;
-      letter-spacing: 0.1em;
+      font-size: 4rem;
+      letter-spacing: 0.2em;
       margin-bottom: 0.2em;
     }
     p.tagline {
       font-style: italic;
       font-size: 1.2rem;
-      color: #ccc;
+      color: #ddd;
     }
     nav {
       text-align: center;
@@ -43,6 +48,20 @@
       padding: 0 20px;
       line-height: 1.7;
     }
+    .visual-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .visual-grid img {
+      width: 100%;
+      filter: grayscale(100%) brightness(80%);
+      transition: 0.3s;
+    }
+    .visual-grid img:hover {
+      filter: grayscale(0%) brightness(100%);
+    }
     footer {
       text-align: center;
       font-size: 0.8rem;
@@ -52,7 +71,7 @@
   </style>
 </head>
 <body>
-  <header>
+  <div class="hero">
     <h1>VELLUNEA</h1>
     <p class="tagline">this is where the memory starts.</p>
     <nav>
@@ -61,7 +80,7 @@
       <a href="#visuals">visuals</a>
       <a href="#contact">contact</a>
     </nav>
-  </header>
+  </div>
 
   <section id="about">
     <h2>about</h2>
@@ -70,21 +89,40 @@
 
   <section id="music">
     <h2>music</h2>
-    <p>coming soon. first release in the works — ambient pop + r&b + ghost beats.</p>
+    <p>spotify account coming soon — follow me on instagram for updates.</p>
+    <p>coming soon. first release in the works — ambient pop + r&b + hip-hop + rap.</p>
   </section>
 
   <section id="visuals">
     <h2>visuals</h2>
     <p>dark tones. moonlight. fog. objects with history. everything has a texture. instagram coming soon.</p>
+    <div class="visual-grid">
+      <img src="images/fog.jpg" alt="foggy landscape" />
+      <img src="images/rain.jpg" alt="rain on window" />
+      <img src="images/piano.jpg" alt="piano" />
+      <img src="images/staircase.jpg" alt="gothic staircase" />
+      <img src="images/window.jpg" alt="moonlight window" />
+      <img src="images/water.jpg" alt="light on water" />
+    </div>
   </section>
 
   <section id="contact">
     <h2>contact</h2>
+    <p>instagram: <a href="https://instagram.com/vellunea.music" target="_blank" style="color:#f4f4f4;">@vellunea.music</a></p>
     <p>email: <a href="mailto:vellunea.music@gmail.com" style="color:#f4f4f4;">vellunea.music@gmail.com</a></p>
   </section>
 
   <footer>
-    &copy; 2025 VELLUNEA. all echoes reserved.
+    <div class="social-icons">
+        <a href="https://instagram.com/vellunea.music" target="_blank" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a class="disabled" aria-label="Spotify (coming soon)">
+            <i class="fab fa-spotify"></i>
+        </a>
+    </div>
+    <p><em>Spotify page coming soon.</em></p>
+    <p>&copy; 2025 VELLUNEA. all echoes reserved.</p>
   </footer>
 </body>
-</html>
+</html> 
