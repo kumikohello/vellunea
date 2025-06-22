@@ -5,6 +5,13 @@ title: Visuals
 
 # Visuals
 
+<nav>
+  <a href="{{ '/about/' | relative_url }}">about</a>
+  <a href="{{ '/music/' | relative_url }}">music</a>
+  <a href="{{ '/visuals/' | relative_url }}" class="active">visuals</a>
+  <a href="{{ '/contact/' | relative_url }}">contact</a>
+</nav>
+
 <p>Dark tones. Moonlight. Fog. Objects with history. Everything has a texture. 
     see more on <a href="https://instagram.com/vellunea.music" target="_blank" style="color:#f4f4f4;">@vellunea.music</a>.</p>
 
