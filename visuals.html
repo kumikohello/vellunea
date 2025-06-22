@@ -6,6 +6,18 @@
   <title>Visuals | VELLUNEA</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --accent: #c087a6; /* soft mauve/pink-lavender */
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       background: #0e0e0e;
       color: #f4f4f4;
@@ -14,26 +26,31 @@
       max-width: 1000px;
       margin: auto;
     }
+
     h1 {
       font-family: 'Playfair Display', serif;
       font-size: 3rem;
       margin-bottom: 1rem;
       letter-spacing: 0.1em;
     }
+
     .visual-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 15px;
       margin-top: 30px;
     }
+
     .visual-grid img {
       width: 100%;
       filter: brightness(90%);
       transition: 0.3s;
     }
+
     .visual-grid img:hover {
       filter: brightness(105%);
     }
+
     a {
       color: #f4f4f4;
       text-decoration: none;

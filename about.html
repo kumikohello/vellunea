@@ -6,6 +6,18 @@
   <title>About | VELLUNEA</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --accent: #c087a6; /* soft mauve/pink-lavender */
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       background: #0e0e0e;
       color: #f4f4f4;
@@ -14,12 +26,23 @@
       max-width: 800px;
       margin: auto;
     }
+
     h1 {
       font-family: 'Playfair Display', serif;
       font-size: 3rem;
       margin-bottom: 1rem;
       letter-spacing: 0.1em;
     }
+
+    .hero h1 a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .hero h1 a:hover {
+      color: var(--accent);
+    }
+
     a {
       color: #f4f4f4;
       text-decoration: none;
