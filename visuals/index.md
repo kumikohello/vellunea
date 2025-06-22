@@ -17,4 +17,4 @@ title: Visuals
       <img src="images/water.jpg" alt="light on water" loading="lazy" />
   </div>
 
-<p><a href="/" class="back-home">&larr; Back to home</a></p>
+<p><a href="{{ '/' | relative_url }}" class="back-home">&larr; Back to home</a></p>
