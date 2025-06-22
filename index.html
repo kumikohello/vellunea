@@ -51,7 +51,8 @@
       z-index: 1000;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
       line-height: 1;
-      padding-top: 2px;
+      padding-top: 4px;
+      padding-left: 1px
     }
 
     .hero {
@@ -71,10 +72,6 @@
     .hero h1 a {
       text-decoration: none;
       color: inherit;
-    }
-
-    .hero h1 a:hover {
-      color: var(--accent);
     }
 
     .hero h1 a:hover {
@@ -104,7 +101,16 @@
     }
 
     nav a:hover,
-    a:hover {
+    nav a.active {
+      color: var(--accent);
+    }
+
+    a.back-home {
+      color: #f4f4f4;
+      text-decoration: none;
+    }
+
+    a.back-home:hover {
       color: var(--accent);
     }
 
