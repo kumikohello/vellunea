@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visuals | VELLUNEA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #0e0e0e;
+      color: #f4f4f4;
+      font-family: 'Montserrat', sans-serif;
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      letter-spacing: 0.1em;
+    }
+    .visual-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin-top: 30px;
+    }
+    .visual-grid img {
+      width: 100%;
+      filter: grayscale(100%) brightness(80%);
+      transition: 0.3s;
+    }
+    .visual-grid img:hover {
+      filter: grayscale(0%) brightness(100%);
+    }
+    a {
+      color: #f4f4f4;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Visuals</h1>
+  <p>Dark tones. Moonlight. Fog. Objects with history. Everything has a texture. Instagram coming soon.</p>
+  <div class="visual-grid">
+    <img src="images/fog.jpg" alt="foggy landscape" />
+      <img src="images/rain.jpg" alt="rain on window" />
+      <img src="images/piano.jpg" alt="piano" />
+      <img src="images/staircase.jpg" alt="gothic staircase" />
+      <img src="images/window.jpg" alt="moonlight window" />
+      <img src="images/water.jpg" alt="light on water" />
+  </div>
+  <p style="margin-top: 30px;"><a href="index.html">&larr; Back to home</a></p>
+</body>
+</html>

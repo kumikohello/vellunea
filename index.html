@@ -13,6 +13,11 @@
       color: #f4f4f4;
       font-family: 'Montserrat', sans-serif;
     }
+    .hero {
+      padding: 100px 20px 40px;
+      text-align: center;
+      color: #f4f4f4;
+    }
     h1 {
       font-family: 'Playfair Display', serif;
       font-size: 4rem;
@@ -34,31 +39,24 @@
       margin: 0 15px;
       font-weight: 300;
     }
-    section {
-      max-width: 800px;
-      margin: 80px auto;
-      padding: 0 20px;
-      line-height: 1.7;
-    }
-    .visual-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 15px;
-      margin-top: 20px;
-    }
-    .visual-grid img {
-      width: 100%;
-      filter: grayscale(100%) brightness(80%);
-      transition: 0.3s;
-    }
-    .visual-grid img:hover {
-      filter: grayscale(0%) brightness(100%);
-    }
     footer {
       text-align: center;
       font-size: 0.8rem;
       color: #888;
       padding: 40px 20px;
+    }
+    .social-icons {
+      margin-top: 15px;
+    }
+    .social-icons a {
+      color: #f4f4f4;
+      margin: 0 15px;
+      font-size: 2rem;
+      text-decoration: none;
+    }
+    .social-icons .disabled {
+      opacity: 0.4;
+      pointer-events: none;
     }
   </style>
 </head>
@@ -67,42 +65,12 @@
     <h1>VELLUNEA</h1>
     <p class="tagline">this is where the memory starts.</p>
     <nav>
-      <a href="#about">about</a>
-      <a href="#music">music</a>
-      <a href="#visuals">visuals</a>
-      <a href="#contact">contact</a>
+      <a href="about.html">about</a>
+      <a href="music.html">music</a>
+      <a href="visuals.html">visuals</a>
+      <a href="contact.html">contact</a>
     </nav>
   </div>
-
-  <section id="about">
-    <h2>about</h2>
-    <p>vellunea is a soundspace for nostalgia, shadows, and memory fragments. music for late night walks, sleepless longing, and moments that never quite fade.</p>
-  </section>
-
-  <section id="music">
-    <h2>music</h2>
-    <p>spotify account coming soon — follow me on instagram for updates.</p>
-    <p>coming soon. first release in the works — ambient pop + r&b + hip-hop + rap.</p>
-  </section>
-
-  <section id="visuals">
-    <h2>visuals</h2>
-    <p>dark tones. moonlight. fog. objects with history. everything has a texture. instagram coming soon.</p>
-    <div class="visual-grid">
-      <img src="images/fog.jpg" alt="foggy landscape" />
-      <img src="images/rain.jpg" alt="rain on window" />
-      <img src="images/piano.jpg" alt="piano" />
-      <img src="images/staircase.jpg" alt="gothic staircase" />
-      <img src="images/window.jpg" alt="moonlight window" />
-      <img src="images/water.jpg" alt="light on water" />
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>contact</h2>
-    <p>instagram: <a href="https://instagram.com/vellunea.music" target="_blank" style="color:#f4f4f4;">@vellunea.music</a></p>
-    <p>email: <a href="mailto:vellunea.music@gmail.com" style="color:#f4f4f4;">vellunea.music@gmail.com</a></p>
-  </section>
 
   <footer>
     <div class="social-icons">
