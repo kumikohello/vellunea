@@ -31,6 +31,9 @@
       padding: 60px 20px;
       max-width: 800px;
       margin: auto;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
 
     img {
@@ -263,34 +266,6 @@
         box-shadow: 0 0 10px rgba(200, 135, 166, 0.5);
       }
     }
-
-    @media (max-width: 480px) {
-      h1 {
-        font-size: 2.5rem;
-        letter-spacing: 0.1em;
-      }
-
-      .hero {
-        padding: 60px 20px 30px;
-      }
-
-      .tagline {
-        font-size: 1rem;
-      }
-
-      body {
-        padding: 40px 20px;
-      }
-
-      nav a {
-        display: block;
-        margin: 10px 0;
-      }
-
-      section {
-        margin: 40px auto;
-      }
-    }
   </style>
 </head>
 <body>
@@ -299,9 +274,11 @@
     <div class="logo-text">Vellunea</div>
   </a>
 
-  {% if page.title == "Home" %}
-    <!-- Show hero section first -->
-    {{ hero_content }}
+  {% if page.hero %}
+    <div class="hero">
+      <h1><a href="{{ '/' | relative_url }}">VELLUNEA</a></h1>
+      <p class="tagline">this is where the memory starts.</p>
+    </div>
   {% endif %}
 
   <!-- Desktop Navigation -->

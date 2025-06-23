@@ -1,14 +1,8 @@
 ---
 layout: default
 title: Home
+hero: true
 ---
-
-{% capture hero_content %}
-<div class="hero">
-  <h1><a href="{{ '/' | relative_url }}">VELLUNEA</a></h1>
-  <p class="tagline">this is where the memory starts.</p>
-</div>
-{% endcapture %}
 
 <section>
   <h2>about</h2>
