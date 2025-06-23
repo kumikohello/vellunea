@@ -13,4 +13,4 @@ album: "Secret for now"
 <p>first post in the first album.</p>
 <p>Posts on <a href="https://instagram.com/vellunea.music" target="_blank" style="color:#f4f4f4;">@vellunea.music</a>.</p>
 
-<p><a href="{{ '/posts/' | relative_url }}" class="back-home">&larr; Back to posts</a></p>
+<p><a href="{{ '/posts/' | relative_url }}" class="back-home pulse-hover">&larr; Back to posts</a></p>

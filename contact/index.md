@@ -5,14 +5,6 @@ title: Contact
 
 <h1>Contact</h1>
 
-<nav>
-  <a href="{{ '/about/' | relative_url }}" class="pulse-hover">about</a>
-  <a href="{{ '/music/' | relative_url }}" class="pulse-hover">music</a>
-  <a href="{{ '/posts/' | relative_url }}" class="pulse-hover">posts</a>
-  <a href="{{ '/visuals/' | relative_url }}" class="pulse-hover">visuals</a>
-  <a href="{{ '/contact/' | relative_url }}" class="active pulse-hover">contact</a>
-</nav>
-
 <ul>
   <li>
     <a href="https://instagram.com/vellunea.music" target="_blank" class="pulse-hover">

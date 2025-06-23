@@ -211,7 +211,27 @@
 
     .visual-grid img:hover {
       transform: scale(1.03);
-    }    
+    }
+
+    /* Desktop: Always visible */
+    #site-nav {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    /* Mobile: Initially hidden */
+    @media (max-width: 768px) {
+      #site-nav {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      #site-nav.show-nav {
+        display: flex;
+      }
+    }
 
     @media (max-width: 480px) {
       h1 {
@@ -243,10 +263,18 @@
   </style>
 </head>
 <body>
-    <a class="logo-container pulse-hover" href="{{ '/' | relative_url }}">
+    <a class="logo-container pulse-hover" href="{{ '/' | relative_url }}" id="logo-toggle">
       <div class="logo-circle">V</div>
       <div class="logo-text">Vellunea</div>
     </a>
+
+    <nav id="site-nav" class="show-nav">
+        <a href="{{ '/about/' | relative_url }}" class="pulse-hover">about</a>
+        <a href="{{ '/music/' | relative_url }}" class="pulse-hover">music</a>
+        <a href="{{ '/posts/' | relative_url }}" class="pulse-hover">posts</a>
+        <a href="{{ '/visuals/' | relative_url }}" class="pulse-hover">visuals</a>
+        <a href="{{ '/contact/' | relative_url }}" class="pulse-hover">contact</a>
+      </nav>
 
   {{ content }}
 
@@ -265,5 +293,19 @@
     <p><em>Spotify page coming soon.</em></p>
     <p>&copy; 2025 VELLUNEA. all rights reserved.</p>
   </footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const logo = document.getElementById('logo-toggle');
+      const nav = document.getElementById('site-nav');
+  
+      logo.addEventListener('click', function (e) {
+        // Prevent link navigation on mobile
+        if (window.innerWidth <= 768) {
+          e.preventDefault();
+          nav.classList.toggle('show-nav');
+        }
+      });
+    });
+  </script>
 </body>
 </html>
