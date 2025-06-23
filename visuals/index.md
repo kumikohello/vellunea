@@ -3,11 +3,12 @@ layout: default
 title: Visuals
 ---
 
-# Visuals
+<h1>Visuals</h1>
 
 <nav>
   <a href="{{ '/about/' | relative_url }}">about</a>
   <a href="{{ '/music/' | relative_url }}">music</a>
+  <a href="{{ '/posts/' | relative_url }}">posts</a>
   <a href="{{ '/visuals/' | relative_url }}" class="active">visuals</a>
   <a href="{{ '/contact/' | relative_url }}">contact</a>
 </nav>
@@ -17,11 +18,11 @@ title: Visuals
 
   <div class="visual-grid">
     <img src="images/fog.jpg" alt="foggy landscape" loading="lazy" />
-      <img src="images/rain.jpg" alt="rain on window" loading="lazy" />
-      <img src="images/piano.jpg" alt="piano" loading="lazy" />
-      <img src="images/staircase.jpg" alt="gothic staircase" loading="lazy" />
-      <img src="images/window.jpg" alt="moonlight window" loading="lazy" />
-      <img src="images/water.jpg" alt="light on water" loading="lazy" />
+    <img src="images/rain.jpg" alt="rain on window" loading="lazy" />
+    <img src="images/piano.jpg" alt="piano" loading="lazy" />
+    <img src="images/staircase.jpg" alt="gothic staircase" loading="lazy" />
+    <img src="images/window.jpg" alt="moonlight window" loading="lazy" />
+    <img src="images/water.jpg" alt="light on water" loading="lazy" />
   </div>
 
 <p><a href="{{ '/' | relative_url }}" class="back-home">&larr; Back to home</a></p>

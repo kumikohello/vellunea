@@ -3,11 +3,12 @@ layout: default
 title: About
 ---
 
-# About
+<h1>About</h1>
 
 <nav>
   <a href="{{ '/about/' | relative_url }}" class="active">about</a>
   <a href="{{ '/music/' | relative_url }}">music</a>
+  <a href="{{ '/posts/' | relative_url }}">posts</a>
   <a href="{{ '/visuals/' | relative_url }}">visuals</a>
   <a href="{{ '/contact/' | relative_url }}">contact</a>
 </nav>
