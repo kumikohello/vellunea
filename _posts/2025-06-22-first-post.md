@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "My First Post"
-date: 2025-06-23
+date: 2025-06-22
 image: /assets/posts/post_image_1.jpg
 album: "Secret for now"
 ---
