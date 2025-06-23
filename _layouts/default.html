@@ -214,37 +214,46 @@
     }
 
     /* Desktop: Always visible */
-    #site-nav {
+    .desktop-nav {
       text-align: center;
       margin: 40px 0;
     }
 
     /* Mobile Slide-Out Menu */
     @media (max-width: 768px) {
-      #site-nav {
+      .desktop-nav {
+        display: none
+      }
+
+      .mobile-menu {
         position: fixed;
         top: 0;
-        right: -250px; /* Off-screen */
+        left: -250px; /* Off-screen */
         width: 200px;
         height: 100%;
         background: #1a1a2e;
+        box-shadow: 2px 0 12px rgba(0, 0, 0, 0.5);
+        padding: 60px 20px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        padding-top: 60px;
-        transition: right 0.3s ease;
-        z-index: 999;
+        gap: 20px;
+        transition: left 0.3s ease;
+        z-index: 1500;
       }
 
-      #site-nav.show-nav {
-        right: 0; /* Slides in */
+      .mobile-menu.show-mobile-menu {
+        left: 0;
       }
 
-      nav a {
-        display: block;
-        margin: 20px 0;
-        font-size: 1.5rem;
+      .mobile-menu a {
+        font-size: 1.2rem;
+        color: var(--accent);
+        text-decoration: none;
+      }
+
+      .mobile-menu a:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 10px rgba(200, 135, 166, 0.5);
       }
     }
 
@@ -278,18 +287,29 @@
   </style>
 </head>
 <body>
-    <a class="logo-container pulse-hover" href="{{ '/' | relative_url }}" id="logo-toggle">
-      <div class="logo-circle">V</div>
-      <div class="logo-text">Vellunea</div>
-    </a>
+  <a class="logo-container pulse-hover" href="{{ '/' | relative_url }}" id="logo-toggle">
+    <div class="logo-circle">V</div>
+    <div class="logo-text">Vellunea</div>
+  </a>
 
-    <nav id="site-nav">
-        <a href="{{ '/about/' | relative_url }}" class="pulse-hover">about</a>
-        <a href="{{ '/music/' | relative_url }}" class="pulse-hover">music</a>
-        <a href="{{ '/posts/' | relative_url }}" class="pulse-hover">posts</a>
-        <a href="{{ '/visuals/' | relative_url }}" class="pulse-hover">visuals</a>
-        <a href="{{ '/contact/' | relative_url }}" class="pulse-hover">contact</a>
-      </nav>
+  <!-- Desktop Navigation -->
+  <nav id="site-nav" class="desktop-nav">
+    <a href="{{ '/about/' | relative_url }}" class="pulse-hover">about</a>
+    <a href="{{ '/music/' | relative_url }}" class="pulse-hover">music</a>
+    <a href="{{ '/posts/' | relative_url }}" class="pulse-hover">posts</a>
+    <a href="{{ '/visuals/' | relative_url }}" class="pulse-hover">visuals</a>
+    <a href="{{ '/contact/' | relative_url }}" class="pulse-hover">contact</a>
+  </nav>
+
+  <!-- Mobile Slide-In Menu -->
+  <div id="mobile-menu" class="mobile-menu">
+    <a href="{{ '/' | relative_url }}" class="pulse-hover mobile-home">VELLUNEA</a>
+    <a href="{{ '/about/' | relative_url }}" class="pulse-hover mobile-link">about</a>
+    <a href="{{ '/music/' | relative_url }}" class="pulse-hover mobile-link">music</a>
+    <a href="{{ '/posts/' | relative_url }}" class="pulse-hover mobile-link">posts</a>
+    <a href="{{ '/visuals/' | relative_url }}" class="pulse-hover mobile-link">visuals</a>
+    <a href="{{ '/contact/' | relative_url }}" class="pulse-hover mobile-link">contact</a>
+  </div>
 
   {{ content }}
 
@@ -308,28 +328,25 @@
     <p><em>Spotify page coming soon.</em></p>
     <p>&copy; 2025 VELLUNEA. all rights reserved.</p>
   </footer>
+
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       const logo = document.getElementById('logo-toggle');
-      const nav = document.getElementById('site-nav');
-      const navLinks = nav.querySelectorAll('a');
+      const mobileMenu = document.getElementById('mobile-menu');
   
       // Toggle menu when logo is clicked on mobile
       logo.addEventListener('click', function (e) {
         if (window.innerWidth <= 768) {
           e.preventDefault();
-          nav.classList.toggle('show-nav');
+          mobileMenu.classList.toggle('show-mobile-menu');
         }
       });
-  
-      // Close menu when a link is clicked on mobile
-      navLinks.forEach(link => {
+
+      document.querySelectorAll('.mobile-menu a').forEach(link => {
         link.addEventListener('click', function () {
-          if (window.innerWidth <= 768) {
-            nav.classList.remove('show-nav');
-          }
-        });
-      });
+            mobileMenu.classList.remove('show-mobile-menu');
+        })
+      })
     });
   </script>  
 </body>
