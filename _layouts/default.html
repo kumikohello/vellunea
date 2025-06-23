@@ -44,7 +44,13 @@
       left: 20px;
       display: flex;
       align-items: center;
-      z-index: 1000;
+      text-decoration: none;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .logo-container:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 15px rgba(200, 135, 166, 0.6);
     }
 
     .logo-circle {
@@ -60,16 +66,9 @@
       align-items: center;
       justify-content: center;
       text-decoration: none;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
       line-height: 1;
       padding-top: 4px;
       padding-left: 1px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .logo-circle:hover {
-      transform: scale(1.1);
-      box-shadow: 0 0 15px rgba(200, 135, 166, 0.6);
     }
 
     .logo-text {
@@ -77,13 +76,6 @@
       font-family: 'Playfair Display', serif;
       font-size: 1.5rem;
       color: var(--accent);
-      text-decoration: none;
-      transition: transform 0.3s ease, text-shadow 0.3s ease;
-    }
-
-    .logo-text:hover {
-        transform: scale(1.1);
-        text-shadow: 0 0 8px rgba(200, 135, 166, 0.6);
     }
 
     .hero {
@@ -125,13 +117,8 @@
 
     a:link,
     a:visited {
-      color: #f4f4f4;
+      color: inherit;
       text-decoration: none;
-    }
-
-    a:hover,
-    a:active {
-      color: var(--accent);
     }
 
     nav {
@@ -249,10 +236,10 @@
   </style>
 </head>
 <body>
-    <div class="logo-container">
-        <a class="logo-circle" href="{{ '/' | relative_url }}">V</a>
-        <a class="logo-text" href="{{ '/' | relative_url }}">Vellunea</a>
-    </div>
+    <a class="logo-container" href="{{ '/' | relative_url }}">
+      <div class="logo-circle">V</div>
+      <div class="logo-text">Vellunea</div>
+    </a>
 
   {{ content }}
 
