@@ -10,10 +10,20 @@ title: Contact
   <a href="{{ '/music/' | relative_url }}" class="pulse-hover">music</a>
   <a href="{{ '/posts/' | relative_url }}" class="pulse-hover">posts</a>
   <a href="{{ '/visuals/' | relative_url }}" class="pulse-hover">visuals</a>
-  <a href="{{ '/contact/' | relative_url }}" class="active" class="pulse-hover">contact</a>
+  <a href="{{ '/contact/' | relative_url }}" class="active pulse-hover">contact</a>
 </nav>
 
-- Instagram: [@vellunea.music](https://instagram.com/vellunea.music)
-- Email: [vellunea.music@gmail.com](mailto:vellunea.music@gmail.com)
+<ul>
+  <li>
+    <a href="https://instagram.com/vellunea.music" target="_blank" class="pulse-hover">
+      Instagram: @vellunea.music
+    </a>
+  </li>
+  <li>
+    <a href="mailto:vellunea.music@gmail.com" class="pulse-hover">
+      Email: vellunea.music@gmail.com
+    </a>
+  </li>
+</ul>
 
-<p><a href="{{ '/' | relative_url }}" class="back-home">&larr; Back to home</a></p>
+<p><a href="{{ '/' | relative_url }}" class="back-home pulse=hover">&larr; Back to home</a></p>
