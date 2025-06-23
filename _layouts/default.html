@@ -145,6 +145,13 @@
       color: var(--accent);
     }
 
+    .pulse-hover:hover {
+      box-shadow: 0 0 12px rgba(200, 135, 166, 0.5);
+      text-shadow: 0 0 8px rgba(200, 135, 166, 0.5);
+      transform: scale(1.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease, text-shadow 0.3s ease;
+    }
+
     section {
       max-width: 800px;
       margin: 80px auto;
@@ -236,7 +243,7 @@
   </style>
 </head>
 <body>
-    <a class="logo-container" href="{{ '/' | relative_url }}">
+    <a class="logo-container pulse-hover" href="{{ '/' | relative_url }}">
       <div class="logo-circle">V</div>
       <div class="logo-text">Vellunea</div>
     </a>
@@ -245,13 +252,13 @@
 
   <footer>
     <div class="social-icons">
-      <a href="https://instagram.com/vellunea.music" target="_blank" aria-label="Instagram">
+      <a href="https://instagram.com/vellunea.music" target="_blank" aria-label="Instagram" class="pulse-hover">
         <i class="fab fa-instagram"></i>
       </a>
       <a class="disabled" aria-label="Spotify (coming soon)">
         <i class="fab fa-spotify"></i>
       </a>
-      <a href="https://youtube.com/channel/UCKQ2EHmNw6qJLIbKBjvv6jg" target="_blank" aria-label="YouTube">
+      <a href="https://youtube.com/channel/UCKQ2EHmNw6qJLIbKBjvv6jg" target="_blank" aria-label="YouTube" class="pulse-hover">
         <i class="fab fa-youtube"></i>
       </a>
     </div>

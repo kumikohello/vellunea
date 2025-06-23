@@ -6,11 +6,11 @@ title: Visuals
 <h1>Visuals</h1>
 
 <nav>
-  <a href="{{ '/about/' | relative_url }}">about</a>
-  <a href="{{ '/music/' | relative_url }}">music</a>
-  <a href="{{ '/posts/' | relative_url }}">posts</a>
-  <a href="{{ '/visuals/' | relative_url }}" class="active">visuals</a>
-  <a href="{{ '/contact/' | relative_url }}">contact</a>
+  <a href="{{ '/about/' | relative_url }}" class="pulse-hover">about</a>
+  <a href="{{ '/music/' | relative_url }}" class="pulse-hover">music</a>
+  <a href="{{ '/posts/' | relative_url }}" class="pulse-hover">posts</a>
+  <a href="{{ '/visuals/' | relative_url }}" class="active" class="pulse-hover">visuals</a>
+  <a href="{{ '/contact/' | relative_url }}" class="pulse-hover">contact</a>
 </nav>
 
 <p>Dark tones. Moonlight. Fog. Objects with history. Everything has a texture. 
