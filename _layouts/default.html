@@ -299,14 +299,32 @@
     <div class="logo-text">Vellunea</div>
   </a>
 
-  <!-- Desktop Navigation -->
-  <nav id="site-nav" class="desktop-nav">
-    <a href="{{ '/about/' | relative_url }}" class="pulse-hover">about</a>
-    <a href="{{ '/music/' | relative_url }}" class="pulse-hover">music</a>
-    <a href="{{ '/posts/' | relative_url }}" class="pulse-hover">posts</a>
-    <a href="{{ '/visuals/' | relative_url }}" class="pulse-hover">visuals</a>
-    <a href="{{ '/contact/' | relative_url }}" class="pulse-hover">contact</a>
-  </nav>
+  {% if page.title == "Home" %}
+    <!-- Show hero section first -->
+    {{ content }}
+
+    <!-- Then show desktop nav -->
+    <nav id="site-nav" class="desktop-nav">
+      <a href="{{ '/about/' | relative_url }}" class="pulse-hover">about</a>
+      <a href="{{ '/music/' | relative_url }}" class="pulse-hover">music</a>
+      <a href="{{ '/posts/' | relative_url }}" class="pulse-hover">posts</a>
+      <a href="{{ '/visuals/' | relative_url }}" class="pulse-hover">visuals</a>
+      <a href="{{ '/contact/' | relative_url }}" class="pulse-hover">contact</a>
+    </nav>
+
+  {% else %}
+    <!-- Show desktop nav first -->
+    <nav id="site-nav" class="desktop-nav">
+      <a href="{{ '/about/' | relative_url }}" class="pulse-hover">about</a>
+      <a href="{{ '/music/' | relative_url }}" class="pulse-hover">music</a>
+      <a href="{{ '/posts/' | relative_url }}" class="pulse-hover">posts</a>
+      <a href="{{ '/visuals/' | relative_url }}" class="pulse-hover">visuals</a>
+      <a href="{{ '/contact/' | relative_url }}" class="pulse-hover">contact</a>
+    </nav>
+
+    <!-- Then show content -->
+    {{ content }}
+  {% endif %}
 
   <!-- Mobile Slide-In Menu -->
   <div id="mobile-menu" class="mobile-menu">
@@ -317,8 +335,6 @@
     <a href="{{ '/visuals/' | relative_url }}" class="pulse-hover mobile-link">visuals</a>
     <a href="{{ '/contact/' | relative_url }}" class="pulse-hover mobile-link">contact</a>
   </div>
-
-  {{ content }}
 
   <footer>
     <div class="social-icons">
