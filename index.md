@@ -6,14 +6,6 @@ title: Home
 <div class="hero">
   <h1><a href="{{ '/' | relative_url }}">VELLUNEA</a></h1>
   <p class="tagline">this is where the memory starts.</p>
-
-  <nav>
-    <a href="{{ '/about/' | relative_url }}" class="pulse-hover {% if page.title == 'About' %}active{% endif %}">about</a>
-    <a href="{{ '/music/' | relative_url }}" class="pulse-hover {% if page.title == 'Music' %}active{% endif %}">music</a>
-    <a href="{{ '/posts/' | relative_url }}" class="pulse-hover {% if page.title == 'Posts' %}active{% endif %}">posts</a>
-    <a href="{{ '/visuals/' | relative_url }}" class="pulse-hover {% if page.title == 'Visuals' %}active{% endif %}">visuals</a>
-    <a href="{{ '/contact/' | relative_url }}" class="pulse-hover {% if page.title == 'Contact' %}active{% endif %}">contact</a>
-  </nav>
 </div>
 
 <section>
