@@ -118,6 +118,13 @@
       color: var(--accent);
     }
 
+    section {
+      max-width: 800px;
+      margin: 80px auto;
+      padding: 0 20px;
+      line-height: 1.7;
+    }
+
     footer {
       text-align: center;
       font-size: 0.8rem;
@@ -199,44 +206,10 @@
         margin: 40px auto;
       }
     }
-
-    .swirl {
-      position: fixed;
-      width: 150px;
-      opacity: 0.15;
-      z-index: -1;
-    }
-
-    .swirl.top-left {
-      top: 0;
-      left: 0;
-    }
-
-    .swirl.top-right {
-      top: 0;
-      right: 0;
-      transform: scaleX(-1);
-    }
-
-    .swirl.bottom-left {
-      bottom: 0;
-      left: 0;
-      transform: scaleY(-1);
-    }
-
-    .swirl.bottom-right {
-      bottom: 0;
-      right: 0;
-      transform: scaleX(-1) scaleY(-1);
-    }
   </style>
 </head>
 <body>
   <a class="logo-circle" href="{{ '/' | relative_url }}">V</a>
-  <img src="{{ '/assets/swirl.png' | relative_url }}" class="swirl top-left" alt="" />
-  <img src="{{ '/assets/swirl.png' | relative_url }}" class="swirl top-right" alt="" />
-  <img src="{{ '/assets/swirl.png' | relative_url }}" class="swirl bottom-left" alt="" />
-  <img src="{{ '/assets/swirl.png' | relative_url }}" class="swirl bottom-right" alt="" />
 
   {{ content }}
 

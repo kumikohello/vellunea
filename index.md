@@ -3,10 +3,6 @@ layout: default
 title: Home
 ---
 
-# VELLUNEA
-
-*This is where the memory starts.*
-
 <div class="hero">
   <h1><a href="{{ '/' | relative_url }}">VELLUNEA</a></h1>
   <p class="tagline">this is where the memory starts.</p>
