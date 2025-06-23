@@ -219,17 +219,32 @@
       margin: 40px 0;
     }
 
-    /* Mobile: Initially hidden */
+    /* Mobile Slide-Out Menu */
     @media (max-width: 768px) {
       #site-nav {
-        display: none;
+        position: fixed;
+        top: 0;
+        right: -250px; /* Off-screen */
+        width: 200px;
+        height: 100%;
+        background: #1a1a2e;
+        display: flex;
         flex-direction: column;
+        justify-content: center;
         text-align: center;
-        margin-top: 20px;
+        padding-top: 60px;
+        transition: right 0.3s ease;
+        z-index: 999;
       }
 
       #site-nav.show-nav {
-        display: flex;
+        right: 0; /* Slides in */
+      }
+
+      nav a {
+        display: block;
+        margin: 20px 0;
+        font-size: 1.5rem;
       }
     }
 
@@ -268,7 +283,7 @@
       <div class="logo-text">Vellunea</div>
     </a>
 
-    <nav id="site-nav" class="show-nav">
+    <nav id="site-nav">
         <a href="{{ '/about/' | relative_url }}" class="pulse-hover">about</a>
         <a href="{{ '/music/' | relative_url }}" class="pulse-hover">music</a>
         <a href="{{ '/posts/' | relative_url }}" class="pulse-hover">posts</a>
@@ -297,15 +312,25 @@
     document.addEventListener('DOMContentLoaded', function () {
       const logo = document.getElementById('logo-toggle');
       const nav = document.getElementById('site-nav');
+      const navLinks = nav.querySelectorAll('a');
   
+      // Toggle menu when logo is clicked on mobile
       logo.addEventListener('click', function (e) {
-        // Prevent link navigation on mobile
         if (window.innerWidth <= 768) {
           e.preventDefault();
           nav.classList.toggle('show-nav');
         }
       });
+  
+      // Close menu when a link is clicked on mobile
+      navLinks.forEach(link => {
+        link.addEventListener('click', function () {
+          if (window.innerWidth <= 768) {
+            nav.classList.remove('show-nav');
+          }
+        });
+      });
     });
-  </script>
+  </script>  
 </body>
 </html>
