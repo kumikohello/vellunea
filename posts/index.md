@@ -13,10 +13,17 @@ title: Posts
   <a href="{{ '/contact/' | relative_url }}">contact</a>
 </nav>
 
-<p>Posts on <a href="https://instagram.com/vellunea.music" target="_blank" style="color:#f4f4f4;">@vellunea.music</a>.</p>
+{% assign albums = site.posts | group_by: "album" %}
 
+{% for album in albums %}
+  <h2>{{ album.name }}</h2>
   <div class="visual-grid">
-    <img src="images/post_1.jpg" alt="first post" loading="lazy" />
+    {% for post in album.items %}
+      <a href="{{ post.url | relative_url }}">
+        <img src="{{ post.image }}" alt="{{ post.title }}" loading="lazy" />
+      </a>
+    {% endfor %}
   </div>
+{% endfor %}
 
 <p><a href="{{ '/' | relative_url }}" class="back-home">&larr; Back to home</a></p>
