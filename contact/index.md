@@ -7,12 +7,12 @@ title: Contact
 
 <ul>
   <li>
-    <a href="https://instagram.com/vellunea.music" target="_blank" class="pulse-hover">
+    <a href="https://instagram.com/vellunea.music" target="_blank">
       Instagram: @vellunea.music
     </a>
   </li>
   <li>
-    <a href="mailto:vellunea.music@gmail.com" class="pulse-hover">
+    <a href="mailto:vellunea.music@gmail.com">
       Email: vellunea.music@gmail.com
     </a>
   </li>

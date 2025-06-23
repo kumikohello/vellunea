@@ -299,32 +299,22 @@
     <div class="logo-text">Vellunea</div>
   </a>
 
-  {% if page.title == "Home" %}
+  {% if page.hero %}
     <!-- Show hero section first -->
-    {{ content }}
-
-    <!-- Then show desktop nav -->
-    <nav id="site-nav" class="desktop-nav">
-      <a href="{{ '/about/' | relative_url }}" class="pulse-hover">about</a>
-      <a href="{{ '/music/' | relative_url }}" class="pulse-hover">music</a>
-      <a href="{{ '/posts/' | relative_url }}" class="pulse-hover">posts</a>
-      <a href="{{ '/visuals/' | relative_url }}" class="pulse-hover">visuals</a>
-      <a href="{{ '/contact/' | relative_url }}" class="pulse-hover">contact</a>
-    </nav>
-
-  {% else %}
-    <!-- Show desktop nav first -->
-    <nav id="site-nav" class="desktop-nav">
-      <a href="{{ '/about/' | relative_url }}" class="pulse-hover">about</a>
-      <a href="{{ '/music/' | relative_url }}" class="pulse-hover">music</a>
-      <a href="{{ '/posts/' | relative_url }}" class="pulse-hover">posts</a>
-      <a href="{{ '/visuals/' | relative_url }}" class="pulse-hover">visuals</a>
-      <a href="{{ '/contact/' | relative_url }}" class="pulse-hover">contact</a>
-    </nav>
-
-    <!-- Then show content -->
-    {{ content }}
+    {{ hero_content }}
   {% endif %}
+
+  <!-- Desktop Navigation -->
+  <nav id="site-nav" class="desktop-nav">
+    <a href="{{ '/about/' | relative_url }}" class="pulse-hover">about</a>
+    <a href="{{ '/music/' | relative_url }}" class="pulse-hover">music</a>
+    <a href="{{ '/posts/' | relative_url }}" class="pulse-hover">posts</a>
+    <a href="{{ '/visuals/' | relative_url }}" class="pulse-hover">visuals</a>
+    <a href="{{ '/contact/' | relative_url }}" class="pulse-hover">contact</a>
+  </nav>
+
+  <!-- Main Content -->
+  {{ content }}
 
   <!-- Mobile Slide-In Menu -->
   <div id="mobile-menu" class="mobile-menu">
