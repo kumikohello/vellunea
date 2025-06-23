@@ -7,12 +7,17 @@ title: Home
 
 *This is where the memory starts.*
 
-<nav>
-  <a href="{{ '/about/' | relative_url }}">about</a>
-  <a href="{{ '/music/' | relative_url }}">music</a>
-  <a href="{{ '/visuals/' | relative_url }}">visuals</a>
-  <a href="{{ '/contact/' | relative_url }}">contact</a>
-</nav>
+<div class="hero">
+  <h1><a href="{{ '/' | relative_url }}">VELLUNEA</a></h1>
+  <p class="tagline">this is where the memory starts.</p>
+
+  <nav>
+    <a href="{{ '/about/' | relative_url }}">about</a>
+    <a href="{{ '/music/' | relative_url }}">music</a>
+    <a href="{{ '/visuals/' | relative_url }}">visuals</a>
+    <a href="{{ '/contact/' | relative_url }}">contact</a>
+  </nav>
+</div>
 
 <section>
   <h2>about</h2>
