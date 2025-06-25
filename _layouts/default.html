@@ -28,7 +28,7 @@
       background: #1a1a2e;
       color: #f4f4f4;
       font-family: 'Montserrat', sans-serif;
-      padding: 60px 20px;
+      padding: 60px 20px 20px;
       max-width: 800px;
       margin: auto;
     }
@@ -42,65 +42,17 @@
       position: sticky;
       top: 0;
       width: 100%;
-      background-color: #22223b; /* Dark but lighter than page bg */
+      background-color: #22223b;
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 15px 30px;
       z-index: 2000;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    }
-
-    .banner-title {
-      font-family: 'Playfair Display', serif;
-      font-size: 2rem;
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    .banner-socials a {
-      margin-left: 20px;
-      font-size: 1.5rem;
-      text-decoration: none;
-    }
-
-    .banner-socials a:hover {
-      transform: scale(1.2);
-    }
-
-    .banner-socials a[aria-label="Instagram"] {
-      color: #E1306C; /* Instagram color */
-    }
-
-    .banner-socials a[aria-label="YouTube"] {
-      color: #FF0000; /* YouTube color */
-    }
-
-    .banner-socials a[aria-label="TikTok"] {
-      animation: tiktokPulse 1s infinite alternate;
-    }
-
-    .banner-socials a[aria-label="Apple Music"] {
-      color: #f4f4f4;
-      opacity: 0.4;
-      pointer-events: none;
-    }
-
-    @keyframes tiktokPulse {
-    0% {
-      color: rgba(255, 43, 102, 1); /* TikTok pink */
-      text-shadow: 0 0 8px rgba(255, 43, 102, 0.8);
-    }
-    100% {
-      color: rgba(0, 255, 255, 1); /* TikTok cyan */
-      text-shadow: 0 0 8px rgba(0, 255, 255, 0.8);
-    }
+      margin: 0;
     }
 
     .logo-container {
-      position: fixed;
-      top: 20px;
-      left: 20px;
       display: flex;
       align-items: center;
       text-decoration: none;
@@ -135,6 +87,61 @@
       font-family: 'Playfair Display', serif;
       font-size: 1.5rem;
       color: var(--accent);
+    }
+
+    .banner-socials a {
+      margin-left: 20px;
+      font-size: 1.5rem;
+      text-decoration: none;
+    }
+
+    .banner-socials a:hover {
+      transform: scale(1.2);
+    }
+
+    .banner-socials a[aria-label="Instagram"] {
+      color: #E1306C; /* Instagram color */
+    }
+
+    .banner-socials a[aria-label="YouTube"] {
+      color: #FF0000; /* YouTube color */
+    }
+
+    .banner-socials a[aria-label="Apple Music"] {
+      color: #f4f4f4;
+      opacity: 0.4;
+      pointer-events: none;
+    }
+
+    .tiktok-icon {
+      background-color: #000; /* Black square */
+      color: #fff; /* White TikTok icon */
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 6px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .tiktok-hover:hover {
+      animation: tiktokPulse 1s infinite alternate;
+    }
+
+    @keyframes tiktokPulse {
+      0% {
+        box-shadow: 0 0 12px rgba(255, 43, 102, 0.8); /* TikTok Pink */
+        transform: scale(1.1);
+      }
+      100% {
+        box-shadow: 0 0 12px rgba(0, 255, 255, 0.8); /* TikTok Cyan */
+        transform: scale(1.1);
+      }
+    }
+
+    .banner-socials a[aria-label="TikTok"] {
+      animation: tiktokPulse 1s infinite alternate;
     }
 
     .hero {
@@ -258,22 +265,6 @@
       color: #f4f4f4;
     }
 
-    .tiktok-hover:hover {
-      animation: tiktokPulse 1s infinite alternate;
-    }
-
-    @keyframes tiktokPulse {
-      0% {
-        box-shadow: 0 0 12px rgba(255, 43, 102, 0.8); /* TikTok Pink */
-        transform: scale(1.1);
-      }
-      100% {
-        box-shadow: 0 0 12px rgba(0, 255, 255, 0.8); /* TikTok Cyan */
-        transform: scale(1.1);
-      }
-    }
-
-
     .visual-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -384,27 +375,29 @@
 <body>
   <!-- Banner -->
   <div class="banner">
-    <a href="{{ '/' | relative_url }}" class="banner-title">VELLUNEA</a>
+    <a href="{{ '/' | relative_url }}" class="logo-container pulse-hover" id="logo-toggle">
+      <div class="logo-circle">V</div>
+      <div class="logo-text">Vellunea</div>
+    </a>
+
     <div class="banner-socials">
       <a href="https://instagram.com/vellunea.music" target="_blank" aria-label="Instagram" class="pulse-hover">
         <i class="fab fa-instagram"></i>
       </a>
-      <a href="https://youtube.com/channel/UCKQ2EHmNw6qJLIbKBjvv6jg" target="_blank" aria-label="YouTube" class="pulse-hover">
-        <i class="fab fa-youtube"></i>
-      </a>
-      <a href="https://www.tiktok.com/@vellunea.music" target="_blank" aria-label="TikTok" class="tiktok-hover">
-        <i class="fab fa-tiktok"></i>
+      <a class="disabled" aria-label="Spotify (coming soon)">
+        <i class="fab fa-spotify"></i>
       </a>
       <a class="disabled" aria-label="Apple Music (coming soon)">
         <i class="fab fa-apple"></i>
       </a>
+      <a href="https://youtube.com/channel/UCKQ2EHmNw6qJLIbKBjvv6jg" target="_blank" aria-label="YouTube" class="pulse-hover">
+        <i class="fab fa-youtube"></i>
+      </a>
+      <a href="https://www.tiktok.com/@vellunea.music" target="_blank" aria-label="TikTok" class="tiktok-icon">
+        <i class="fab fa-tiktok"></i>
+      </a>
     </div>
   </div>
-
-  <a class="logo-container pulse-hover" href="{{ '/' | relative_url }}" id="logo-toggle">
-    <div class="logo-circle">V</div>
-    <div class="logo-text">Vellunea</div>
-  </a>
 
   {% if page.hero %}
     <div class="hero">
@@ -451,7 +444,7 @@
       <a href="https://youtube.com/channel/UCKQ2EHmNw6qJLIbKBjvv6jg" target="_blank" aria-label="YouTube" class="pulse-hover">
         <i class="fab fa-youtube"></i>
       </a>
-      <a href="https://www.tiktok.com/@vellunea.music" target="_blank" aria-label="TikTok" class="pulse-hover tiktok-hover">
+      <a href="https://www.tiktok.com/@vellunea.music" target="_blank" aria-label="TikTok" class="tiktok-icon">
         <i class="fab fa-tiktok"></i>
       </a>
     </div>
