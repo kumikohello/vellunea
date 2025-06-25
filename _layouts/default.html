@@ -23,14 +23,17 @@
       box-sizing: border-box;
     }
 
+    .content-wrapper {
+      max-width: 800px;
+      margin: auto;
+      padding: 60px 20px 20px;
+    }
+
     body {
       margin: 0;
       background: #1a1a2e;
       color: #f4f4f4;
       font-family: 'Montserrat', sans-serif;
-      padding: 60px 20px 20px;
-      max-width: 800px;
-      margin: auto;
     }
 
     img {
@@ -42,7 +45,7 @@
       position: sticky;
       top: 0;
       width: 100%;
-      background-color: #22223b;
+      background-color: #1a1a2e;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -138,10 +141,6 @@
         box-shadow: 0 0 12px rgba(0, 255, 255, 0.8); /* TikTok Cyan */
         transform: scale(1.1);
       }
-    }
-
-    .banner-socials a[aria-label="TikTok"] {
-      animation: tiktokPulse 1s infinite alternate;
     }
 
     .hero {
@@ -249,10 +248,6 @@
 
     .social-icons a[aria-label="Instagram"] {
       color: #E1306C; /* Instagram brand color */
-    }
-
-    .social-icons a[aria-label="TikTok"] {
-      color: #010101; /* TikTok brand color is typically black */
     }
 
     .social-icons a[aria-label="YouTube"] {
