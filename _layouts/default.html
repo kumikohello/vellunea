@@ -38,6 +38,65 @@
       height: auto;
     }
 
+    .banner {
+      position: sticky;
+      top: 0;
+      width: 100%;
+      background-color: #22223b; /* Dark but lighter than page bg */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      z-index: 2000;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .banner-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .banner-socials a {
+      margin-left: 20px;
+      font-size: 1.5rem;
+      text-decoration: none;
+    }
+
+    .banner-socials a:hover {
+      transform: scale(1.2);
+    }
+
+    .banner-socials a[aria-label="Instagram"] {
+      color: #E1306C; /* Instagram color */
+    }
+
+    .banner-socials a[aria-label="YouTube"] {
+      color: #FF0000; /* YouTube color */
+    }
+
+    .banner-socials a[aria-label="TikTok"] {
+      animation: tiktokPulse 1s infinite alternate;
+    }
+
+    .banner-socials a[aria-label="Apple Music"] {
+      color: #f4f4f4;
+      opacity: 0.4;
+      pointer-events: none;
+    }
+
+    @keyframes tiktokPulse {
+    0% {
+      color: rgba(255, 43, 102, 1); /* TikTok pink */
+      text-shadow: 0 0 8px rgba(255, 43, 102, 0.8);
+    }
+    100% {
+      color: rgba(0, 255, 255, 1); /* TikTok cyan */
+      text-shadow: 0 0 8px rgba(0, 255, 255, 0.8);
+    }
+    }
+
     .logo-container {
       position: fixed;
       top: 20px;
@@ -323,6 +382,25 @@
   </style>
 </head>
 <body>
+  <!-- Banner -->
+  <div class="banner">
+    <a href="{{ '/' | relative_url }}" class="banner-title">VELLUNEA</a>
+    <div class="banner-socials">
+      <a href="https://instagram.com/vellunea.music" target="_blank" aria-label="Instagram" class="pulse-hover">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://youtube.com/channel/UCKQ2EHmNw6qJLIbKBjvv6jg" target="_blank" aria-label="YouTube" class="pulse-hover">
+        <i class="fab fa-youtube"></i>
+      </a>
+      <a href="https://www.tiktok.com/@vellunea.music" target="_blank" aria-label="TikTok" class="tiktok-hover">
+        <i class="fab fa-tiktok"></i>
+      </a>
+      <a class="disabled" aria-label="Apple Music (coming soon)">
+        <i class="fab fa-apple"></i>
+      </a>
+    </div>
+  </div>
+
   <a class="logo-container pulse-hover" href="{{ '/' | relative_url }}" id="logo-toggle">
     <div class="logo-circle">V</div>
     <div class="logo-text">Vellunea</div>
@@ -370,11 +448,11 @@
       <a class="disabled" aria-label="Apple Music (coming soon)">
         <i class="fab fa-apple"></i>
       </a>
-      <a href="https://www.tiktok.com/@vellunea.music" target="_blank" aria-label="TikTok" class="pulse-hover tiktok-hover">
-        <i class="fab fa-tiktok"></i>
-      </a>
       <a href="https://youtube.com/channel/UCKQ2EHmNw6qJLIbKBjvv6jg" target="_blank" aria-label="YouTube" class="pulse-hover">
         <i class="fab fa-youtube"></i>
+      </a>
+      <a href="https://www.tiktok.com/@vellunea.music" target="_blank" aria-label="TikTok" class="pulse-hover tiktok-hover">
+        <i class="fab fa-tiktok"></i>
       </a>
     </div>
     <p><em>Spotify, Apple Music coming soon.</em></p>
