@@ -111,14 +111,24 @@
       color: var(--accent);
     }
 
-    .banner-socials a {
-      margin-left: 20px;
-      font-size: 1.5rem;
-      text-decoration: none;
+    /* Black box style for all social icons */
+    .banner-socials a,
+    .social-icons a {
+      background-color: #000; /* Black background */
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 6px;
+      color: inherit; /* Preserve original icon color */
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    .banner-socials a:hover {
+    .banner-socials a:hover,
+    .social-icons a:hover {
       transform: scale(1.2);
+      box-shadow: 0 0 12px rgba(200, 135, 166, 0.5);
     }
 
     .banner-socials a[aria-label="Instagram"] {
