@@ -185,6 +185,10 @@
       color: #E1306C; /* Instagram brand color */
     }
 
+    .social-icons a[aria-label="TikTok"] {
+      color: #010101; /* TikTok brand color is typically black */
+    }
+
     .social-icons a[aria-label="YouTube"] {
       color: #FF0000; /* YouTube brand color */
     }
@@ -194,6 +198,22 @@
       pointer-events: none;
       color: #f4f4f4;
     }
+
+    .tiktok-hover:hover {
+      animation: tiktokPulse 1s infinite alternate;
+    }
+
+    @keyframes tiktokPulse {
+      0% {
+        box-shadow: 0 0 12px rgba(255, 43, 102, 0.8); /* TikTok Pink */
+        transform: scale(1.1);
+      }
+      100% {
+        box-shadow: 0 0 12px rgba(0, 255, 255, 0.8); /* TikTok Cyan */
+        transform: scale(1.1);
+      }
+    }
+
 
     .visual-grid {
       display: grid;
@@ -350,7 +370,7 @@
       <a class="disabled" aria-label="Apple Music (coming soon)">
         <i class="fab fa-apple"></i>
       </a>
-      <a href="https://www.tiktok.com/@vellunea.music" target="_blank" aria-label="TikTok" class="pulse-hover">
+      <a href="https://www.tiktok.com/@vellunea.music" target="_blank" aria-label="TikTok" class="pulse-hover tiktok-hover">
         <i class="fab fa-tiktok"></i>
       </a>
       <a href="https://youtube.com/channel/UCKQ2EHmNw6qJLIbKBjvv6jg" target="_blank" aria-label="YouTube" class="pulse-hover">
