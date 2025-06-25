@@ -26,7 +26,7 @@
     .content-wrapper {
       max-width: 800px;
       margin: auto;
-      padding: 60px 20px 20px;
+      padding: 100px 20px 20px;
     }
 
     body {
@@ -42,8 +42,10 @@
     }
 
     .banner {
-      position: sticky;
+      position: fixed;
       top: 0;
+      left: 0;
+      right: 0;
       width: 100%;
       background-color: #1a1a2e;
       display: flex;
@@ -388,12 +390,13 @@
       <a href="https://youtube.com/channel/UCKQ2EHmNw6qJLIbKBjvv6jg" target="_blank" aria-label="YouTube" class="pulse-hover">
         <i class="fab fa-youtube"></i>
       </a>
-      <a href="https://www.tiktok.com/@vellunea.music" target="_blank" aria-label="TikTok" class="tiktok-icon">
+      <a href="https://www.tiktok.com/@vellunea.music" target="_blank" aria-label="TikTok" class="tiktok-icon pulse-hover tiktok-hover">
         <i class="fab fa-tiktok"></i>
       </a>
     </div>
   </div>
 
+  <div class="content-wrapper">
   {% if page.hero %}
     <div class="hero">
       <h1><a href="{{ '/' | relative_url }}">VELLUNEA</a></h1>
@@ -401,28 +404,29 @@
     </div>
   {% endif %}
 
-  <!-- Desktop Navigation -->
-  <nav id="site-nav" class="desktop-nav">
-    <a href="{{ '/about/' | relative_url }}" class="pulse-hover">about</a>
-    <a href="{{ '/music/' | relative_url }}" class="pulse-hover">music</a>
-    <a href="{{ '/posts/' | relative_url }}" class="pulse-hover">posts</a>
-    <a href="{{ '/visuals/' | relative_url }}" class="pulse-hover">visuals</a>
-    <a href="{{ '/contact/' | relative_url }}" class="pulse-hover">contact</a>
-    <a href="{{ '/sign-up/' | relative_url }}" class="pulse-hover">sign up</a>
-  </nav>
+        <!-- Desktop Navigation -->
+    <nav id="site-nav" class="desktop-nav">
+      <a href="{{ '/about/' | relative_url }}" class="pulse-hover">about</a>
+      <a href="{{ '/music/' | relative_url }}" class="pulse-hover">music</a>
+      <a href="{{ '/posts/' | relative_url }}" class="pulse-hover">posts</a>
+      <a href="{{ '/visuals/' | relative_url }}" class="pulse-hover">visuals</a>
+      <a href="{{ '/contact/' | relative_url }}" class="pulse-hover">contact</a>
+      <a href="{{ '/sign-up/' | relative_url }}" class="pulse-hover">sign up</a>
+    </nav>
 
-  <!-- Main Content -->
-  {{ content }}
+    <!-- Main Content -->
+    {{ content }}
 
-  <!-- Mobile Slide-In Menu -->
-  <div id="mobile-menu" class="mobile-menu">
-    <a href="{{ '/' | relative_url }}" class="pulse-hover mobile-home">VELLUNEA</a>
-    <a href="{{ '/about/' | relative_url }}" class="pulse-hover mobile-link">about</a>
-    <a href="{{ '/music/' | relative_url }}" class="pulse-hover mobile-link">music</a>
-    <a href="{{ '/posts/' | relative_url }}" class="pulse-hover mobile-link">posts</a>
-    <a href="{{ '/visuals/' | relative_url }}" class="pulse-hover mobile-link">visuals</a>
-    <a href="{{ '/contact/' | relative_url }}" class="pulse-hover mobile-link">contact</a>
-    <a href="{{ '/sign-up/' | relative_url }}" class="pulse-hover mobile-link">sign up</a>
+    <!-- Mobile Slide-In Menu -->
+    <div id="mobile-menu" class="mobile-menu">
+      <a href="{{ '/' | relative_url }}" class="pulse-hover mobile-home">VELLUNEA</a>
+      <a href="{{ '/about/' | relative_url }}" class="pulse-hover mobile-link">about</a>
+      <a href="{{ '/music/' | relative_url }}" class="pulse-hover mobile-link">music</a>
+      <a href="{{ '/posts/' | relative_url }}" class="pulse-hover mobile-link">posts</a>
+      <a href="{{ '/visuals/' | relative_url }}" class="pulse-hover mobile-link">visuals</a>
+      <a href="{{ '/contact/' | relative_url }}" class="pulse-hover mobile-link">contact</a>
+      <a href="{{ '/sign-up/' | relative_url }}" class="pulse-hover mobile-link">sign up</a>
+    </div>
   </div>
 
   <footer>
@@ -439,7 +443,7 @@
       <a href="https://youtube.com/channel/UCKQ2EHmNw6qJLIbKBjvv6jg" target="_blank" aria-label="YouTube" class="pulse-hover">
         <i class="fab fa-youtube"></i>
       </a>
-      <a href="https://www.tiktok.com/@vellunea.music" target="_blank" aria-label="TikTok" class="tiktok-icon">
+      <a href="https://www.tiktok.com/@vellunea.music" target="_blank" aria-label="TikTok" class="tiktok-icon pulse-hover tiktok-hover">
         <i class="fab fa-tiktok"></i>
       </a>
     </div>
