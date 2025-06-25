@@ -57,6 +57,22 @@
       margin: 0;
     }
 
+    .desktop-nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    .desktop-nav a {
+      font-weight: 300;
+      text-decoration: none;
+      color: #f4f4f4;
+    }
+
+    .desktop-nav a:hover,
+    .desktop-nav a.active {
+      color: var(--accent);
+    }
+
     .logo-container {
       display: flex;
       align-items: center;
@@ -188,21 +204,6 @@
       text-decoration: none;
     }
 
-    nav {
-      text-align: center;
-      margin: 40px 0;
-    }
-
-    nav a {
-      margin: 0 15px;
-      font-weight: 300;
-    }
-
-    nav a:hover,
-    nav a.active {
-      color: var(--accent);
-    }
-
     a.back-home {
       color: #f4f4f4;
       text-decoration: none;
@@ -302,12 +303,6 @@
       box-shadow: 0 0 12px rgba(200, 135, 166, 0.5);
     }
 
-    /* Desktop: Always visible */
-    .desktop-nav {
-      text-align: center;
-      margin: 40px 0;
-    }
-
     /* Hide mobile menu on desktop */
     @media (min-width: 769px) {
       .mobile-menu {
@@ -377,6 +372,16 @@
       <div class="logo-text">Vellunea</div>
     </a>
 
+    <!-- Desktop Navigation -->
+    <nav id="site-nav" class="desktop-nav">
+      <a href="{{ '/about/' | relative_url }}" class="pulse-hover">about</a>
+      <a href="{{ '/music/' | relative_url }}" class="pulse-hover">music</a>
+      <a href="{{ '/posts/' | relative_url }}" class="pulse-hover">posts</a>
+      <a href="{{ '/visuals/' | relative_url }}" class="pulse-hover">visuals</a>
+      <a href="{{ '/contact/' | relative_url }}" class="pulse-hover">contact</a>
+      <a href="{{ '/sign-up/' | relative_url }}" class="pulse-hover">sign up</a>
+    </nav>
+
     <div class="banner-socials">
       <a href="https://instagram.com/vellunea.music" target="_blank" aria-label="Instagram" class="pulse-hover">
         <i class="fab fa-instagram"></i>
@@ -397,22 +402,12 @@
   </div>
 
   <div class="content-wrapper">
-  {% if page.hero %}
-    <div class="hero">
-      <h1><a href="{{ '/' | relative_url }}">VELLUNEA</a></h1>
-      <p class="tagline">this is where the memory starts.</p>
-    </div>
-  {% endif %}
-
-        <!-- Desktop Navigation -->
-    <nav id="site-nav" class="desktop-nav">
-      <a href="{{ '/about/' | relative_url }}" class="pulse-hover">about</a>
-      <a href="{{ '/music/' | relative_url }}" class="pulse-hover">music</a>
-      <a href="{{ '/posts/' | relative_url }}" class="pulse-hover">posts</a>
-      <a href="{{ '/visuals/' | relative_url }}" class="pulse-hover">visuals</a>
-      <a href="{{ '/contact/' | relative_url }}" class="pulse-hover">contact</a>
-      <a href="{{ '/sign-up/' | relative_url }}" class="pulse-hover">sign up</a>
-    </nav>
+    {% if page.hero %}
+      <div class="hero">
+        <h1><a href="{{ '/' | relative_url }}">VELLUNEA</a></h1>
+        <p class="tagline">this is where the memory starts.</p>
+      </div>
+    {% endif %}
 
     <!-- Main Content -->
     {{ content }}
