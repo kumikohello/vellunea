@@ -265,16 +265,20 @@
       color: #E1306C; /* Instagram brand color */
     }
 
-    .social-icons a[aria-label="YouTube"] {
-      color: #FF0000; /* YouTube brand color */
-    }
-
     .social-icons a[aria-label="Spotify"] {
       color: #1DB954; /* Spotify green */
     }
 
     .social-icons a[aria-label="Apple Music"] {
       color: #FA57C1; /* Apple Music pink */
+    }
+
+    .social-icons a[aria-label="YouTube"] {
+      color: #FF0000; /* YouTube brand color */
+    }
+
+    .social-icons a[aria-label="TikTok"] {
+      color: #fff; /* TikTok brand color */
     }
 
     .social-icons .disabled {
@@ -466,7 +470,7 @@
         <h1><a href="{{ '/' | relative_url }}">VELLUNEA</a></h1>
         <p class="tagline">this is where the memory starts.</p>
           <div class="artist-photo">
-            <img src="/assets/vellunea-photo.jpg" alt="Vellunea artist portrait">
+            <img src="{{ '/assets/vellunea-photo.jpg' | relative_url }}" alt="Vellunea artist portrait">
           </div>
       </div>
     {% endif %}
