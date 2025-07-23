@@ -33,7 +33,7 @@ title: Music
       <h3>Forgotten Letters</h3>
       <p><strong>Released:</strong> July 18, 2025</p>
       <p><strong>Genres:</strong> <span class="tag">lofi</span></p>
-      <p><a href="https://open.spotify.com/track/2LqwvrAYdjHzf1lg8DbTGP?si=47295668583f4cbf" target="_blank">Listen now &rarr;</a></p>
+      <p><a href="https://open.spotify.com/track/2LqwvrAYdjHzf1lg8DbTGP?si=47295668583f4cbf" target="_blank" class="pulse-hover">Listen now &rarr;</a></p>
     </div>
   </div>
 
@@ -42,7 +42,8 @@ title: Music
     <div>
       <h3>Let Go</h3>
       <p><strong>Released:</strong> July 18, 2025</p>
-      <p><a href="https://open.spotify.com/track/6DnbfBqt9Tsmf7J8Ad7uiN?si=7ec4bfafdd0a4bd0" target="_blank">Listen now &rarr;</a></p>
+      <span class="tag">ambient pop</span></p>
+      <p><a href="https://open.spotify.com/track/6DnbfBqt9Tsmf7J8Ad7uiN?si=7ec4bfafdd0a4bd0" target="_blank" class="pulse-hover">Listen now &rarr;</a></p>
     </div>
   </div>
 
