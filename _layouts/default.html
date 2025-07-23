@@ -382,6 +382,45 @@
         font-size: 1rem;
       }
     }
+
+    .artist-photo {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .artist-photo img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid var(--accent);
+      box-shadow: 0 0 12px rgba(200, 135, 166, 0.4);
+      transition: transform 0.3s ease;
+    }
+
+    .artist-photo img:hover {
+      transform: scale(1.05);
+    }
+
+    .about-photo {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .about-photo img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid var(--accent);
+      box-shadow: 0 0 12px rgba(200, 135, 166, 0.4);
+      transition: transform 0.3s ease;
+    }
+
+    .about-photo img:hover {
+      transform: scale(1.05);
+    }
   </style>
 </head>
 <body>
@@ -426,6 +465,9 @@
       <div class="hero">
         <h1><a href="{{ '/' | relative_url }}">VELLUNEA</a></h1>
         <p class="tagline">this is where the memory starts.</p>
+          <div class="artist-photo">
+            <img src="/assets/vellunea-photo.jpg" alt="Vellunea artist portrait">
+          </div>
       </div>
     {% endif %}
 
