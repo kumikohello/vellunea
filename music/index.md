@@ -5,6 +5,85 @@ title: Music
 
 <h1>Music</h1>
 
-Coming soon. First release in the works. ambient pop + R&B + hip-hop + rap.
+
+<p>ambient pop + R&B + hip-hop + rap</p>
+
+<!-- Albums section -->
+<!-- <section class="albums">
+  <h2>Albums</h2>
+
+  <div class="album">
+    <img src="/assets/images/cover-art/album-title.jpg" alt="Album cover for Forgotten Letters" style="width: 180px; border-radius: 8px;">
+    <div>
+      <h3>Forgotten Letters</h3>
+      <p><strong>Released:</strong> August 15, 2025</p>
+      <p><strong>Genres:</strong> <span class="tag">lofi</span>, <span class="tag">ambient</span>, <span class="tag">instrumental</span></p>
+      <p>A dreamy, nostalgic lofi journey that blends ambient textures with soulful beats. Perfect for late-night thoughts or a quiet walk.</p>
+      <p><a href="https://link.to/album" target="_blank">Listen to the full album &rarr;</a></p>
+    </div>
+  </div>
+</section> -->
+
+<section class="singles">
+  <h2>Singles</h2>
+
+  <div class="single">
+    <img src="images/forgotten_letters_2.JPG" alt="Forgotten Letters" style="width: 150px; border-radius: 8px;">
+    <div>
+      <h3>Forgotten Letters</h3>
+      <p><strong>Released:</strong> July 18, 2025</p>
+      <p><strong>Genres:</strong> <span class="tag">lofi</span></p>
+      <p><a href="https://open.spotify.com/track/2LqwvrAYdjHzf1lg8DbTGP?si=47295668583f4cbf" target="_blank">Listen now &rarr;</a></p>
+    </div>
+  </div>
+
+  <div class="single">
+    <img src="images/Let_Go_2.PNG" alt="Let Go" style="width: 150px; border-radius: 8px;">
+    <div>
+      <h3>Let Go</h3>
+      <p><strong>Released:</strong> July 18, 2025</p>
+      <p><a href="https://open.spotify.com/track/6DnbfBqt9Tsmf7J8Ad7uiN?si=7ec4bfafdd0a4bd0" target="_blank">Listen now &rarr;</a></p>
+    </div>
+  </div>
+
+  <!-- Add more singles below by copying the block above -->
+</section>
 
 <p><a href="{{ '/' | relative_url }}" class="back-home pulse-hover">&larr; Back to home</a></p>
+
+<style>
+  .albums, .singles {
+    margin-top: 2.5rem;
+  }
+
+  .album, .single {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .album img, .single img {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  }
+
+  .tag {
+    display: inline-block;
+    background-color: #eee;
+    color: #333;
+    padding: 2px 8px;
+    margin-right: 5px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    margin-top: 0;
+  }
+</style>
