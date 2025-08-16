@@ -11,8 +11,8 @@ hero: true
 
 <section>
   <h2>music</h2>
-  <p>spotify account coming soon. follow me on instagram for updates.</p>
-  <p>coming soon. first release in the works. ambient pop + r&b + hip-hop + rap.</p>
+  <p>all songs released on all streaming services! follow me on instagram for updates.</p>
+  <p>ambient pop + r&b + hip-hop + rap.</p>
 </section>
 
 <section>
