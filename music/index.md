@@ -30,7 +30,7 @@ title: Music
   <div class="single">
     <img src="images/enmity.PNG" alt="enmity" style="width: 150px; border-radius: 8px;">
     <div>
-      <h3>Let Go</h3>
+      <h3>enmity</h3>
       <p><strong>Released:</strong> September 5, 2025</p>
       <p><strong>Genres:</strong> <span class="tag">rap</span></p>
       <p><a href="https://open.spotify.com/track/0TNH8U7Z0zwex0iMmBtqiS?si=c1484658b646463d" target="_blank" class="pulse-hover">Listen now &rarr;</a></p>
