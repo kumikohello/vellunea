@@ -28,6 +28,15 @@ title: Music
   <h2>Singles</h2>
 
   <div class="single">
+    <img src="images/alive(lie).PNG" alt="alive(lie)" style="width: 150px; border-radius: 8px;">
+    <div>
+      <h3>alive(lie)</h3>
+      <p><strong>Coming Soon:</strong> January 2, 2026</p>
+      <p><strong>Genres:</strong> <span class="tag">experimental</span></p> <span class="tag">ambient pop</span></p>
+    </div>
+  </div>
+
+  <div class="single">
     <img src="images/enmity.PNG" alt="enmity" style="width: 150px; border-radius: 8px;">
     <div>
       <h3>enmity</h3>
