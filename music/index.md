@@ -28,11 +28,21 @@ title: Music
   <h2>Singles</h2>
 
   <div class="single">
+    <img src="images/arewestillfriends?.PNG" alt="arewestillfriends?" style="width: 150px; border-radius: 8px;">
+    <div>
+      <h3>arewestillfriends?</h3>
+      <p><strong>Coming soon:</strong> March 13, 2026</p>
+      <p><strong>Genres:</strong> <span class="tag">downtempo</span> <span class="tag">alternative</span></p>
+    </div>
+  </div>
+
+  <div class="single">
     <img src="images/alive(lie).png" alt="alive(lie)" style="width: 150px; border-radius: 8px;">
     <div>
       <h3>alive(lie)</h3>
-      <p><strong>Coming Soon:</strong> January 2, 2026</p>
+      <p><strong>Released:</strong> January 2, 2026</p>
       <p><strong>Genres:</strong> <span class="tag">experimental</span> <span class="tag">ambient pop</span></p>
+      <p><a href="https://open.spotify.com/track/1Is6VmNHjyvol8xSPcL58O?si=84f57d2c0b614fa0" target="_blank" class="pulse-hover">Listen now &rarr;</a></p>
     </div>
   </div>
 
