@@ -4,6 +4,81 @@ title: Home
 hero: true
 ---
 
+<div class="brand-hero">
+  <!-- Top scrolling strip -->
+  <div class="brand-strip brand-strip-top">
+    <div class="brand-strip-track">
+      <!-- Repeat these tiles with your own images -->
+      <div class="brand-tile">
+        <img src="music/images/alive(lie).png" alt="alive(lie) cover">
+      </div>
+      <div class="brand-tile">
+        <img src="assets/lyrics.png" alt="alive(lie) lyrics">
+      </div>
+      <div class="brand-tile">
+        <img src="music/images/Let_Go_2.PNG" alt="Let Go">
+      </div>
+      <div class="brand-tile">
+        <img src="assets/IMG_3892.JPG" alt="vellunea portrait 1">
+      </div>
+
+      <!-- duplicate for seamless loop -->
+      <div class="brand-strip-track">
+      <!-- Repeat these tiles with your own images -->
+      <div class="brand-tile">
+        <img src="music/images/alive(lie).png" alt="alive(lie) cover">
+      </div>
+      <div class="brand-tile">
+        <img src="assets/lyrics.png" alt="alive(lie) lyrics">
+      </div>
+      <div class="brand-tile">
+        <img src="music/images/Let_Go_2.PNG" alt="Let Go">
+      </div>
+      <div class="brand-tile">
+        <img src="assets/IMG_3892.JPG" alt="vellunea portrait 1">
+      </div>
+  </div>
+
+  <!-- Center title block -->
+  <div class="brand-center">
+    <p class="brand-kicker">soundspace for nostalgia & shadows</p>
+    <h1 class="brand-title">VELLUNEA</h1>
+    <p class="brand-subtitle">music for late night walks, sleepless longing, and memories that glitch.</p>
+  </div>
+
+  <!-- Bottom scrolling strip -->
+  <div class="brand-strip brand-strip-bottom">
+    <div class="brand-strip-track">
+      <div class="brand-tile">
+        <img src="assets/IMG_4172.JPG" alt="vellunea portrait 2">
+      </div>
+      <div class="brand-tile">
+        <img src="music/images/arewestillfriends.PNG" alt="arewestillfriends?">
+      </div>
+      <div class="brand-tile">
+        <img src="music/images/enmity.PNG" alt="enmity">
+      </div>
+      <div class="brand-tile">
+        <img src="music/images/forgotten_letters_2.JPG" alt="forgotten letters">
+      </div>
+
+      <!-- duplicate sequence -->
+      <div class="brand-tile">
+        <img src="assets/IMG_4172.JPG" alt="vellunea portrait 2">
+      </div>
+      <div class="brand-tile">
+        <img src="music/images/arewestillfriends.PNG" alt="arewestillfriends?">
+      </div>
+      <div class="brand-tile">
+        <img src="music/images/enmity.PNG" alt="enmity">
+      </div>
+      <div class="brand-tile">
+        <img src="music/images/forgotten_letters_2.JPG" alt="forgotten letters">
+      </div>
+    </div>
+  </div>
+</div>
+
 <section>
   <h2>about</h2>
   <p>vellunea is a soundspace for nostalgia, shadows, and memory fragments. music for late night walks, sleepless longing, and moments that never quite fade.</p>
