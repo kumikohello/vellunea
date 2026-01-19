@@ -28,7 +28,7 @@ title: Music
   <h2>Singles</h2>
 
   <div class="single">
-    <img src="images/arewestillfriends?.PNG" alt="arewestillfriends?" style="width: 150px; border-radius: 8px;">
+    <img src="images/arewestillfriends.PNG" alt="arewestillfriends?" style="width: 150px; border-radius: 8px;">
     <div>
       <h3>arewestillfriends?</h3>
       <p><strong>Coming soon:</strong> March 13, 2026</p>
