@@ -1,14 +1,13 @@
 ---
 layout: default
 title: Home
-hero: true
+hero: false
 ---
 
 <div class="brand-hero">
   <!-- Top scrolling strip -->
   <div class="brand-strip brand-strip-top">
     <div class="brand-strip-track">
-      <!-- Repeat these tiles with your own images -->
       <div class="brand-tile">
         <img src="music/images/alive(lie).png" alt="alive(lie) cover">
       </div>
@@ -23,20 +22,19 @@ hero: true
       </div>
 
       <!-- duplicate for seamless loop -->
-      <div class="brand-strip-track">
-      <!-- Repeat these tiles with your own images -->
       <div class="brand-tile">
-        <img src="music/images/alive(lie).png" alt="alive(lie) cover">
+        <img src="music/images/alive(lie).png" alt="">
       </div>
       <div class="brand-tile">
-        <img src="assets/lyrics.png" alt="alive(lie) lyrics">
+        <img src="assets/lyrics.png" alt="">
       </div>
       <div class="brand-tile">
-        <img src="music/images/Let_Go_2.PNG" alt="Let Go">
+        <img src="music/images/Let_Go_2.PNG" alt="">
       </div>
       <div class="brand-tile">
-        <img src="assets/IMG_3892.JPG" alt="vellunea portrait 1">
+        <img src="assets/IMG_3892.JPG" alt="">
       </div>
+    </div>
   </div>
 
   <!-- Center title block -->
@@ -64,16 +62,16 @@ hero: true
 
       <!-- duplicate sequence -->
       <div class="brand-tile">
-        <img src="assets/IMG_4172.JPG" alt="vellunea portrait 2">
+        <img src="assets/IMG_4172.JPG" alt="">
       </div>
       <div class="brand-tile">
-        <img src="music/images/arewestillfriends.PNG" alt="arewestillfriends?">
+        <img src="music/images/arewestillfriends.PNG" alt="">
       </div>
       <div class="brand-tile">
-        <img src="music/images/enmity.PNG" alt="enmity">
+        <img src="music/images/enmity.PNG" alt="">
       </div>
       <div class="brand-tile">
-        <img src="music/images/forgotten_letters_2.JPG" alt="forgotten letters">
+        <img src="music/images/forgotten_letters_2.JPG" alt="">
       </div>
     </div>
   </div>
