@@ -15,7 +15,7 @@ title: Music
   <div class="album">
     <img src="images/idontfeelanything.png" alt="Album cover for idontfeelanything" style="width: 180px; border-radius: 8px;">
     <div>
-      <h3>idontfeelanything</h3>
+      <h3>idontfeelanything (EP)</h3>
       <p><strong>Released:</strong> March 20, 2026</p>
       <p><strong>Genres:</strong> <span class="tag">alternative</span> <span class="tag">orchestral pop</span> <span class="tag">electronic</span></p>
       <p>A journey through friendship full of trust and betrayal.</p>
