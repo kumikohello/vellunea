@@ -90,7 +90,7 @@ hero: false
   <div class="music-grid">
 
     <!-- Released Single -->
-    <div class="album">
+    <div class="single">
       <img src="music/images/idontfeelanything.png" alt="idontfeelanything" style="width: 150px; border-radius: 8px;">
       <div>
         <h3>idontfeelanything</h3>
