@@ -19,7 +19,7 @@ title: Music
       <p><strong>Released:</strong> March 20, 2026</p>
       <p><strong>Genres:</strong> <span class="tag">alternative</span> <span class="tag">orchestral pop</span> <span class="tag">electronic</span></p>
       <p>A journey through friendship full of trust and betrayal.</p>
-      <p><a href="https://open.spotify.com/album/0OGWtSn26tF8y2fGPlxc9k?si=kLYK14gyR0q_IFp7vLCrDA" target="_blank">Listen to the full album &rarr;</a></p>
+      <p><a href="https://open.spotify.com/album/0OGWtSn26tF8y2fGPlxc9k?si=kLYK14gyR0q_IFp7vLCrDA" target="_blank" class="pulse-hover">Listen to the full album &rarr;</a></p>
     </div>
   </div>
 </section>
