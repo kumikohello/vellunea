@@ -6,33 +6,44 @@ title: Music
 <h1>Music</h1>
 
 
-<p>ambient pop + R&B + hip-hop + rap</p>
+<p>alternative/ambient/orchestral pop + electronic + R&B + hip-hop + rap + rock</p>
 
 <!-- Albums section -->
-<!-- <section class="albums">
+<section class="albums">
   <h2>Albums</h2>
 
   <div class="album">
-    <img src="/assets/images/cover-art/album-title.jpg" alt="Album cover for Forgotten Letters" style="width: 180px; border-radius: 8px;">
+    <img src="images/idontfeelanything.png" alt="Album cover for idontfeelanything" style="width: 180px; border-radius: 8px;">
     <div>
-      <h3>Forgotten Letters</h3>
-      <p><strong>Released:</strong> August 15, 2025</p>
-      <p><strong>Genres:</strong> <span class="tag">lofi</span>, <span class="tag">ambient</span>, <span class="tag">instrumental</span></p>
-      <p>A dreamy, nostalgic lofi journey that blends ambient textures with soulful beats. Perfect for late-night thoughts or a quiet walk.</p>
-      <p><a href="https://link.to/album" target="_blank">Listen to the full album &rarr;</a></p>
+      <h3>idontfeelanything</h3>
+      <p><strong>Released:</strong> March 20, 2026</p>
+      <p><strong>Genres:</strong> <span class="tag">alternative</span>, <span class="tag">orchestral pop</span>, <span class="tag">electronic</span></p>
+      <p>A journey through friendship full of trust and betrayal.</p>
+      <p><a href="https://open.spotify.com/album/0OGWtSn26tF8y2fGPlxc9k?si=kLYK14gyR0q_IFp7vLCrDA" target="_blank">Listen to the full album &rarr;</a></p>
     </div>
   </div>
-</section> -->
+</section>
 
 <section class="singles">
   <h2>Singles</h2>
 
   <div class="single">
+    <img src="images/idontfeelanything.png" alt="idontfeelanything" style="width: 150px; border-radius: 8px;">
+    <div>
+      <h3>idontfeelanything</h3>
+      <p><strong>Released:</strong> March 20, 2026</p>
+      <p><strong>Genres:</strong> <span class="tag">electronic</span> <span class="tag">alternative</span></p>
+      <p><a href="https://open.spotify.com/track/32INCvJcNYVGYeISqN15dG?si=895a3b1c3ae044e1" target="_blank" class="pulse-hover">Listen now &rarr;</a></p>
+    </div>
+  </div>
+
+  <div class="single">
     <img src="images/arewestillfriends.PNG" alt="arewestillfriends?" style="width: 150px; border-radius: 8px;">
     <div>
       <h3>arewestillfriends?</h3>
-      <p><strong>Coming soon:</strong> March 13, 2026</p>
+      <p><strong>Released:</strong> March 13, 2026</p>
       <p><strong>Genres:</strong> <span class="tag">downtempo</span> <span class="tag">alternative</span></p>
+      <p><a href="https://open.spotify.com/track/4po4QiURaPwtKB76z0XhXS?si=c8d56c7784ed4966" target="_blank" class="pulse-hover">Listen now &rarr;</a></p>
     </div>
   </div>
 
