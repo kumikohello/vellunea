@@ -85,23 +85,23 @@ hero: false
 <section>
   <h2>music</h2>
   <p>all songs released on all streaming services! follow me on instagram for updates.</p>
-  <p>ambient pop + r&b + hip-hop + rap.</p>
+  <p>alternative/ambient/orchestral pop + r&b + hip-hop + rap + rock.</p>
 
   <div class="music-grid">
 
     <!-- Released Single -->
-    <div class="single">
-      <img src="music/images/alive(lie).png" alt="alive(lie)" style="width: 150px; border-radius: 8px;">
+    <div class="album">
+      <img src="music/images/idontfeelanything.png" alt="idontfeelanything" style="width: 150px; border-radius: 8px;">
       <div>
-        <h3>alive(lie)</h3>
-        <p><strong>Released:</strong> January 2, 2026</p>
+        <h3>idontfeelanything</h3>
+        <p><strong>Released:</strong> March 20, 2026</p>
         <p>
           <strong>Genres:</strong>
-          <span class="tag">experimental</span>
-          <span class="tag">ambient pop</span>
+          <span class="tag">alternative</span>
+          <span class="tag">orchestral pop</span>
         </p>
         <p>
-          <a href="https://open.spotify.com/track/1Is6VmNHjyvol8xSPcL58O?si=84f57d2c0b614fa0"
+          <a href="https://open.spotify.com/album/0OGWtSn26tF8y2fGPlxc9k?si=kLYK14gyR0q_IFp7vLCrDA"
              target="_blank"
              class="pulse-hover">
             Listen now &rarr;
@@ -110,7 +110,7 @@ hero: false
       </div>
     </div>
 
-    <!-- Upcoming Single -->
+    <!-- Upcoming Single 
     <div class="single upcoming">
       <img src="music/images/arewestillfriends.PNG" alt="arewestillfriends?" style="width: 150px; border-radius: 8px;">
       <div>
@@ -123,7 +123,7 @@ hero: false
         </p>
         <p class="muted">pre-save link coming soon</p>
       </div>
-    </div>
+    </div> -->
 
   </div>
 </section>
