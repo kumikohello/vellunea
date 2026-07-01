@@ -7,6 +7,11 @@ title: Contact
 
 <ul>
   <li>
+    <a href="mailto:jnj.mngmt@gmail.com">
+      Contact Management (Business & Inquiries) Jina at jnj.mngmt@gmail.com
+    </a>
+  </li>
+  <li>
     <a href="https://instagram.com/vellunea.music" target="_blank">
       Instagram: @vellunea.music
     </a>
