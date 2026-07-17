@@ -7,7 +7,7 @@ title: Posts
 
 <div class="instagram-grid">
   {% for url in site.data.featured_instagram %}
-    {% include instagram-embed.html url=url %}
+    {% include instagram_embed.html url=url %}
   {% endfor %}
 </div>
 
