@@ -312,6 +312,14 @@
       width: 200px;
     }
 
+    .instagram-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+      justify-items: center;
+    }
+
     form input[type="submit"] {
       padding: 10px 20px;
       background-color: var(--accent);
@@ -660,5 +668,6 @@
       })
     });
   </script>  
+  <script async src="//www.instagram.com/embed.js"></script>
 </body>
 </html>
