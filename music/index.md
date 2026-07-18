@@ -22,6 +22,10 @@ title: Music
       <p><a href="https://open.spotify.com/album/0OGWtSn26tF8y2fGPlxc9k?si=kLYK14gyR0q_IFp7vLCrDA" target="_blank" class="pulse-hover">Listen to the full album &rarr;</a></p>
     </div>
   </div>
+
+  <div class="spotify-embed">
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/0OGWtSn26tF8y2fGPlxc9k?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  </div>
 </section>
 
 <section class="singles">
@@ -106,6 +110,17 @@ title: Music
 
   .album img, .single img {
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  }
+
+  .spotify-embed {
+    max-width: 660px;
+    margin: 20px 0 0;
+  }
+
+  .spotify-embed iframe {
+    display: block;
+    width: 100%;
+    border: none;
   }
 
   .tag {

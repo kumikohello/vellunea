@@ -16,6 +16,15 @@ title: Timeline
 
   <p class="tl-intro">this is where the memory starts. every song, every photo, every late-night thought that became <em>idontfeelanything</em> — laid out in the order it happened.</p>
 
+  <div class="tl-embeds">
+    <div class="tl-embed">
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/0OGWtSn26tF8y2fGPlxc9k?utm_source=generator" width="100%" height="450" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+    <div class="tl-embed">
+      <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;background:transparent;border-radius:12px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/idontfeelanything-ep-ep/1881770432"></iframe>
+    </div>
+  </div>
+
   <div class="tl-track">
     <h2 class="tl-year">2025</h2>
 
@@ -222,6 +231,28 @@ title: Timeline
     text-align: center;
     line-height: 1.7;
     opacity: 0.9;
+  }
+
+  .tl-embeds {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+    max-width: 1000px;
+    margin: 40px auto 0;
+    padding: 0 20px;
+  }
+
+  .tl-embed {
+    flex: 1 1 320px;
+    max-width: 660px;
+  }
+
+  .tl-embed iframe {
+    display: block;
+    width: 100%;
+    border: none;
   }
 
   .tl-track {
