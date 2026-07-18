@@ -59,6 +59,9 @@ hero: false
       <div class="brand-tile">
         <img src="music/images/forgotten_letters_2.JPG" alt="forgotten letters">
       </div>
+      <div class="brand-tile">
+        <img src="visuals/images/girl.JPG" alt="girl">
+      </div>
 
       <!-- duplicate sequence -->
       <div class="brand-tile">
