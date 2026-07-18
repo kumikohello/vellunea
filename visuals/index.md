@@ -11,10 +11,10 @@ title: Visuals
   <div class="visual-grid">
     <img src="images/fog.jpg" alt="foggy landscape" loading="lazy" />
     <img src="images/rain.jpg" alt="rain on window" loading="lazy" />
-    <img src="images/girl.JPG" alt="girl" loading="lazy" />
     <img src="images/staircase.jpg" alt="gothic staircase" loading="lazy" />
-    <img src="images/window.jpg" alt="moonlight window" loading="lazy" />
     <img src="images/water.jpg" alt="light on water" loading="lazy" />
+    <img src="images/window.jpg" alt="moonlight window" loading="lazy" />
+    <img src="images/girl.JPG" alt="girl" loading="lazy" />
   </div>
 
 <p><a href="{{ '/' | relative_url }}" class="back-home pulse-hover">&larr; Back to home</a></p>
